@@ -1,0 +1,2 @@
+# cwc
+Crypto Worth Calculator
