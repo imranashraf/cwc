@@ -1,12 +1,10 @@
 coins:
   - name: bitcoin
-    id: 'BTC'
-    cost_price_eur: 8000
+    symbol: 'BTC'
+    cost_price_eur: 12000
     cost_price_btc: 1
 
   - name: ripple
-    id: 'XRP'
-    cost_price_eur: 0.5
+    symbol: 'XRP'
+    cost_price_eur: 2.5
     cost_price_btc: 0.001
-
-

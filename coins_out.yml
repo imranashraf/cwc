@@ -1,0 +1,22 @@
+- !!python/object:__main__.Coin
+  cost_price_btc: 1
+  cost_price_eur: 12000
+  curr_price_btc: 1.0
+  curr_price_eur: 7858.35947832
+  name: bitcoin
+  percent_change_btc_1h: 0.2
+  percent_change_btc_24h: 0.9
+  percent_change_btc_total: 0.0
+  percent_change_eur_total: -34.513671014
+  symbol: BTC
+- !!python/object:__main__.Coin
+  cost_price_btc: 0.001
+  cost_price_eur: 2.5
+  curr_price_btc: 8.643e-05
+  curr_price_eur: 0.6782907178
+  name: ripple
+  percent_change_btc_1h: -0.01
+  percent_change_btc_24h: -1.21
+  percent_change_btc_total: -91.357
+  percent_change_eur_total: -72.868371288
+  symbol: XRP
