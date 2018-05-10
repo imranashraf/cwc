@@ -1,4 +1,4 @@
-from coin import Coin
+from .coin import Coin
 import logging
 
 class Exchange:

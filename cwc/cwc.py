@@ -1,4 +1,4 @@
-from exchange import Exchange
+from .exchange import Exchange
 import logging
 from ruamel import yaml
 
@@ -28,6 +28,6 @@ class Worth:
 if __name__ == "__main__":
     logging.basicConfig(format='[CWC] %(filename)-14s:%(lineno)04d %(message)s', level=logging.INFO)
     myworth = Worth()
-    myworth.load('worth.yml')
+    myworth.load('../tests/worth.yml')
     myworth.update()
     myworth.dump()

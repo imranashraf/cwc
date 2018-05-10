@@ -1,0 +1,50 @@
+- !!python/object:exchange.Exchange
+  coins:
+  - !!python/object:coin.Coin
+    cost_price_btc: 1
+    cost_price_eur: 12000
+    curr_price_btc: 1.0
+    curr_price_eur: 7876.15050453
+    name: bitcoin
+    percent_change_btc_1h: 0.15
+    percent_change_btc_24h: 0.73
+    percent_change_btc_total: 0.0
+    percent_change_eur_total: -34.36541246225
+    symbol: BTC
+  - !!python/object:coin.Coin
+    cost_price_btc: 0.001
+    cost_price_eur: 2.5
+    curr_price_btc: 8.584e-05
+    curr_price_eur: 0.6759334377
+    name: ripple
+    percent_change_btc_1h: 0.35
+    percent_change_btc_24h: -0.04
+    percent_change_btc_total: -91.416
+    percent_change_eur_total: -72.962662492
+    symbol: XRP
+  name: bittrex
+- !!python/object:exchange.Exchange
+  coins:
+  - !!python/object:coin.Coin
+    cost_price_btc: 1
+    cost_price_eur: 12000
+    curr_price_btc: 1.0
+    curr_price_eur: 7876.15050453
+    name: bitcoin
+    percent_change_btc_1h: 0.15
+    percent_change_btc_24h: 0.73
+    percent_change_btc_total: 0.0
+    percent_change_eur_total: -34.36541246225
+    symbol: BTC
+  - !!python/object:coin.Coin
+    cost_price_btc: 0.001
+    cost_price_eur: 2.5
+    curr_price_btc: 8.584e-05
+    curr_price_eur: 0.6759334377
+    name: ripple
+    percent_change_btc_1h: 0.35
+    percent_change_btc_24h: -0.04
+    percent_change_btc_total: -91.416
+    percent_change_eur_total: -72.962662492
+    symbol: XRP
+  name: binance
