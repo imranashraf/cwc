@@ -1,0 +1,24 @@
+worth:
+  - exchange_name: bittrex
+    coins:
+    - name: bitcoin
+      symbol: BTC
+      cost_price_eur: 12000
+      cost_price_btc: 1
+
+    - name: ripple
+      symbol: XRP
+      cost_price_eur: 2.5
+      cost_price_btc: 0.001
+
+  - exchange_name: binance
+    coins:
+    - name: bitcoin
+      symbol: BTC
+      cost_price_eur: 12000
+      cost_price_btc: 1
+
+    - name: ripple
+      symbol: XRP
+      cost_price_eur: 2.5
+      cost_price_btc: 0.001

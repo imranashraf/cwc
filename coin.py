@@ -1,5 +1,4 @@
 import json, requests
-from ruamel import yaml
 
 class Coin:
 	"""Class representing a coin"""
@@ -16,7 +15,18 @@ class Coin:
 		self.percent_change_btc_1h = None
 		self.percent_change_btc_24h = None
 
-	def update_curr_price(self):
+	def load(self, coin_yml):
+		print('Loading a coin')
+		try:
+			self.name = coin_yml['name']
+			self.symbol = coin_yml['symbol']
+			self.cost_price_btc = coin_yml['cost_price_btc']
+			self.cost_price_eur = coin_yml['cost_price_eur']
+		except:
+			print('Improper specification of coin in yaml file!')
+			pass
+
+	def update(self):
 		currency = 'eur'
 		coin = self.name
 		try:
@@ -29,58 +39,14 @@ class Coin:
 			self.percent_change_btc_total = (self.curr_price_btc - self.cost_price_btc)/self.cost_price_btc * 100.0
 		except:
 			print('Error updating current price of {}'.format(self.name))
+			pass
 
-
-	def print(self):
-		print('{} {}'.format(self.name, self.symbol) )
-		print('    cost_price_eur : {}'.format(self.cost_price_eur) )
-		print('    cost_price_btc : {}'.format(self.cost_price_btc) )
-		print('    curr_price_eur : {}'.format(self.curr_price_eur) )
-		print('    curr_price_btc : {}'.format(self.curr_price_btc) )
-		print('    percent_change_eur_total : {}'.format(self.percent_change_eur_total) )
-		print('    percent_change_btc_total : {}'.format(self.percent_change_btc_total) )
-
-
-class Coins:
-	""" list of coins """
-
-	def __init__(self):
-		self.coins = []
-
-	def load(self):
-		print('Loading coins')
-		with open("coins.yml", 'r') as fyml:
-			for coin_yml in yaml.safe_load(fyml)['coins']:
-				try:
-					coin = Coin()
-					coin.name = coin_yml['name']
-					coin.symbol = coin_yml['symbol']
-					coin.cost_price_btc = coin_yml['cost_price_btc']
-					coin.cost_price_eur = coin_yml['cost_price_eur']
-					self.coins.append(coin)
-				except:
-					print('Improper specification of coin in yaml file!')
-
-	def update_curr_price(self):
-		print('Updating current price of coins:')
-		for coin in self.coins:
-			coin.update_curr_price()
-
-
-	def print(self):
-		print('Printing coins:')
-		for coin in self.coins:
-			coin.print()
-
-	def dump(self):
-		print('Dumping coins')
-		with open('coins_out.yml', 'w') as fyml:
-			yaml.dump(self.coins, fyml, default_flow_style=False)
-
-myCoins = Coins()
-if __name__ == "__main__":
-	myCoins.load()
-	myCoins.update_curr_price()
-	myCoins.print()
-	myCoins.dump()
-
+	def __str__(self):
+		str_coin = '{} {}'.format(self.name, self.symbol)
+		str_coin +='    cost_price_eur : {}\n'.format(self.cost_price_eur)
+		str_coin +='    cost_price_btc : {}\n'.format(self.cost_price_btc)
+		str_coin +='    curr_price_eur : {}\n'.format(self.curr_price_eur)
+		str_coin +='    curr_price_btc : {}\n'.format(self.curr_price_btc)
+		str_coin +='    percent_change_eur_total : {}\n'.format(self.percent_change_eur_total)
+		str_coin +='    percent_change_btc_total : {}\n'.format(self.percent_change_btc_total)
+		return str_coin
