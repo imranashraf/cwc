@@ -1,4 +1,5 @@
 import json, requests
+import logging
 
 class Coin:
 	"""Class representing a coin"""
@@ -16,14 +17,14 @@ class Coin:
 		self.percent_change_btc_24h = None
 
 	def load(self, coin_yml):
-		print('Loading a coin')
+		logging.info('Loading a coin')
 		try:
 			self.name = coin_yml['name']
 			self.symbol = coin_yml['symbol']
 			self.cost_price_btc = coin_yml['cost_price_btc']
 			self.cost_price_eur = coin_yml['cost_price_eur']
 		except:
-			print('Improper specification of coin in yaml file!')
+			logging.error('Improper specification of coin in yaml file!')
 			pass
 
 	def update(self):
@@ -38,7 +39,7 @@ class Coin:
 			self.percent_change_eur_total = (self.curr_price_eur - self.cost_price_eur)/self.cost_price_eur * 100.0
 			self.percent_change_btc_total = (self.curr_price_btc - self.cost_price_btc)/self.cost_price_btc * 100.0
 		except:
-			print('Error updating current price of {}'.format(self.name))
+			logging.error('Error updating current price of {}'.format(self.name))
 			pass
 
 	def __str__(self):

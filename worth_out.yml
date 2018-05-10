@@ -4,23 +4,23 @@
     cost_price_btc: 1
     cost_price_eur: 12000
     curr_price_btc: 1.0
-    curr_price_eur: 7861.43176203
+    curr_price_eur: 7902.29940192
     name: bitcoin
-    percent_change_btc_1h: 0.03
-    percent_change_btc_24h: 0.67
+    percent_change_btc_1h: 0.53
+    percent_change_btc_24h: 1.08
     percent_change_btc_total: 0.0
-    percent_change_eur_total: -34.488068649750005
+    percent_change_eur_total: -34.147504984
     symbol: BTC
   - !!python/object:coin.Coin
     cost_price_btc: 0.001
     cost_price_eur: 2.5
-    curr_price_btc: 8.562e-05
-    curr_price_eur: 0.6736364728
+    curr_price_btc: 8.591e-05
+    curr_price_eur: 0.6776795011
     name: ripple
-    percent_change_btc_1h: 0.07
-    percent_change_btc_24h: -0.39
-    percent_change_btc_total: -91.438
-    percent_change_eur_total: -73.054541088
+    percent_change_btc_1h: 0.62
+    percent_change_btc_24h: 0.18
+    percent_change_btc_total: -91.40899999999999
+    percent_change_eur_total: -72.892819956
     symbol: XRP
   name: bittrex
 - !!python/object:exchange.Exchange
@@ -29,22 +29,22 @@
     cost_price_btc: 1
     cost_price_eur: 12000
     curr_price_btc: 1.0
-    curr_price_eur: 7861.43176203
+    curr_price_eur: 7902.29940192
     name: bitcoin
-    percent_change_btc_1h: 0.03
-    percent_change_btc_24h: 0.67
+    percent_change_btc_1h: 0.53
+    percent_change_btc_24h: 1.08
     percent_change_btc_total: 0.0
-    percent_change_eur_total: -34.488068649750005
+    percent_change_eur_total: -34.147504984
     symbol: BTC
   - !!python/object:coin.Coin
     cost_price_btc: 0.001
     cost_price_eur: 2.5
-    curr_price_btc: 8.562e-05
-    curr_price_eur: 0.6736364728
+    curr_price_btc: 8.591e-05
+    curr_price_eur: 0.6776795011
     name: ripple
-    percent_change_btc_1h: 0.07
-    percent_change_btc_24h: -0.39
-    percent_change_btc_total: -91.438
-    percent_change_eur_total: -73.054541088
+    percent_change_btc_1h: 0.62
+    percent_change_btc_24h: 0.18
+    percent_change_btc_total: -91.40899999999999
+    percent_change_eur_total: -72.892819956
     symbol: XRP
   name: binance

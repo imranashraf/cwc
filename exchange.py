@@ -1,4 +1,5 @@
 from coin import Coin
+import logging
 
 class Exchange:
     def __init__(self):
@@ -6,10 +7,11 @@ class Exchange:
         self.coins = []
 
     def load(self, exchange_yml):
-        print('loading an exchange')
+        logging.info('loading an exchange')
         try:
             self.name = exchange_yml['exchange_name']
         except:
+            logging.error('Could not get exchange name')
             pass
 
         for coin_yml in exchange_yml['coins']:
