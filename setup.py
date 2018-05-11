@@ -12,4 +12,7 @@ setup(name='cwc',
       author_email='nader.khammassi@gmail.com, iimran.aashraf@gmail.com',
       url="https://github.com/imranashraf/cwc",
       packages=['cwc'],
+      entry_points = {
+        'console_scripts': ['cwc-cli=cwc.cwc:main'],
+      },
       zip_safe=False)

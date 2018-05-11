@@ -21,3 +21,9 @@ class Exchange:
 
     def update(self):
         [coin.update() for coin in self.coins]
+
+    def __str__(self):
+        ex_str = self.name + '\n'
+        for coin in  self.coins:
+            ex_str += str(coin)
+        return ex_str
