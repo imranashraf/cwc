@@ -2,58 +2,40 @@ worth:
   - exchange_name: bittrex
     coins:
     - name: adex
-      symbol: ADX
       amount: 100
-      cost_price_eur: 0.00020415
-      cost_price_btc: 0.00020415
+      cost_price: 0.00020415 btc
 
     - name: MonetaryUnit
-      symbol: MUE
       amount: 354.72972973
-      cost_price_eur: 0.00002812
-      cost_price_btc: 0.00002812
+      cost_price: 0.00002812 btc
 
     - name: steem
-      symbol: STEEM
       amount: 17.36763542
-      cost_price_eur: 0.00040006
-      cost_price_btc: 0.00040006
+      cost_price: 0.00040006 btc
 
     - name: Cardano
-      symbol: ADA
       amount: 145.00000000
-      cost_price_eur: 0.00007015
-      cost_price_btc: 0.00007015
+      cost_price: 0.00007015 btc
 
     - name: Power-Ledger
-      symbol: POWR
       amount: 85.00000000
-      cost_price_eur: 0.00011200
-      cost_price_btc: 0.00011200
+      cost_price: 0.00011200 btc
 
 
     - name: Nxt
-      symbol: NXT
       amount: 275.00000000
-      cost_price_eur: 0.00003200
-      cost_price_btc: 0.00003200
+      cost_price: 0.00003200 btc
 
     - name: Civic
-      symbol: CVC
       amount: 101.55413999
-      cost_price_eur: 0.00006904
-      cost_price_btc: 0.00006904
+      cost_price: 0.00006904 btc
 
   - exchange_name: binance
     coins:
     - name: Waves
-      symbol: WAVES
       amount: 18.19000000
-      cost_price_eur: 0.00092590
-      cost_price_btc: 0.00092590
+      cost_price: 0.00092590 btc
 
     - name: Aion
-      symbol: AION
       amount: 19.00000000
-      cost_price_eur: 0.00061500
-      cost_price_btc: 0.00061500
+      cost_price: 0.00061500 btc

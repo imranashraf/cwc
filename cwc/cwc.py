@@ -27,7 +27,7 @@ class Worth:
 
     def __str__(self):
         # return '' + map(str, self.exchanges) # accumulate
-        worth_str = ''
+        worth_str = '\n{0:^80}\n'.format('Summary Table')
         for exchange in self.exchanges:
             worth_str += str(exchange) + '\n'
         return worth_str
